@@ -26,7 +26,7 @@ public class Dictionary_Chapter21 {
 	dic.put("muscat","マスカット");
 	dic.put("charry","さくらんぼ");
 
-	
+	/*
 	//拡張for文でfruitsていうループ用変数名設定して、配列englishの中身を一個一個取り出して処理する
 	for(String fruits : english) {
 		//(キー（fruitsという変数にしている）を変数trunsにする
@@ -37,13 +37,13 @@ public class Dictionary_Chapter21 {
 			System.out.println(fruits +"の意味は" + dic.get(fruits));
 		}else if(truns == null) {
 			System.out.println(fruits + "は辞書に存在しません");
-		}
-	}
+	*	}
+	}*/
 	//もしくは
 	//拡張for文でfruitsていうループ用変数名設定して、配列englishの中身を一個一個取り出して処理する
 	for(String fruits : english) {
 		//配列englishの中身がdicにあれば、和訳を表示させ、なければないよと表示させる。
-		if(dic.get(fruits) != null) { //dic.get(fruits)で キー != null　→　配列englishの中身が辞書のキーにあればと意味している
+		if(dic.get(fruits) != null) { //dic.get(fruits)で valueを取得し、!= nullでvalueが辞書にあれば
 			System.out.println(fruits + "の意味は" + dic.get(fruits));
 		}else if(dic.get(fruits) == null) {
 			System.out.println(fruits + "は辞書に存在しません");
